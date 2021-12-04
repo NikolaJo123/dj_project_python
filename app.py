@@ -10,7 +10,7 @@ def main():
       
       sentences, snt_count, char_count = p1.parsing()
 
-      print(sentences, "\n\n")
+      print(sentences, "\n\n\n")
 
       print(f'Found total of {snt_count} sentences. With total of {char_count} character in the file {file.name}')
 
