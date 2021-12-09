@@ -18,7 +18,4 @@ class Parser:
                     if char !=' ':
                         char_count += 1
 
-        return {'sentences': self.snt, 'stats': {'total_sentences': snt_count, 'total_chars': char_count }}, snt_count, char_count
-
-
-
+        return {'sentences': self.snt, 'stats': {'total_sentences': snt_count, 'total_chars': char_count }}
