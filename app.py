@@ -8,11 +8,11 @@ def main():
    with open("example.txt", "r") as file:
       p1 = Parser(file)
       
-      sentences, snt_count, char_count = p1.parsing()
+      sentences = p1.parsing()
 
       print(sentences, "\n\n\n")
 
-      print(f'Found total of {snt_count} sentences. With total of {char_count} character in the file {file.name}')
+      print(f'Found total of {sentences["stats"]["total_sentences"]} sentences. With total of {sentences["stats"]["total_chars"]} character in the file {file.name}')
 
 
 if __name__ == '__main__':
